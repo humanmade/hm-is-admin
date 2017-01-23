@@ -6,6 +6,8 @@
  * Author:      Human Made
  * Author URI:  http://hmn.md
  * License:     GPLv2
+ *
+ * @package is_hm_admin
  */
 
 /**
@@ -151,7 +153,7 @@ class Is_HM_Admin {
 			}
 		}
 
-		// Also allow for filtering globally,
+		// Also allow for filtering globally.
 		return apply_filters( 'is_hm_admin', false, $current_user );
 	}
 
@@ -201,7 +203,7 @@ class Is_HM_Admin {
 		// Check to see if the current user is defined as the privileged user and
 		// if they don't already have the 'is_hm_admin' capability.
 		if ( $is_priviledged && ! $has_cap ) {
-			// Add the cap to the user
+			// Add the cap to the user.
 			return $this->modify_cap( 'add' );
 		}
 
@@ -215,7 +217,7 @@ class Is_HM_Admin {
 	/**
 	 * Helper method to add or remove 'is_hm_admin' capabity for current user.
 	 *
-	 * @param  string $action 'add' or 'remove'
+	 * @param  string $action 'add' or 'remove'.
 	 */
 	public function modify_cap( $action ) {
 
