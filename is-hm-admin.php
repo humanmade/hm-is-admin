@@ -92,7 +92,8 @@ class Is_HM_Admin {
 		$this->basename        = plugin_basename( __FILE__ );
 
 		// This can be whatever user is the privileged user.
-		$this->privileged_users = array( 'wds_admin' );
+		$this->privileged_users = $this->hm_usernames();
+
 	}
 
 	/**
