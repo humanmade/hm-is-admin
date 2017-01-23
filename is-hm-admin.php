@@ -168,13 +168,30 @@ class Is_HM_Admin {
 	}
 
 	/**
+	 * Return an array of Human Made usernames to add to the privileged users list.
+	 *
+	 * @return array Array of Human Made usernames.
+	 */
+	public function hm_usernames() {
+		$users = $this->get_hm_users();
+
+		$usernames = [];
+
+		foreach ( $users as $user ) {
+			$usernames[] = $user->user_login;
+		}
+
+		return $usernames;
+	}
+
+	/**
 	 * Add the 'is_hm_admin' capability if it doesn't exist. Remove if the user should not have it.
 	 *
 	 * @since 1.0.0
 	 */
 	public function add_cap_if_not_exists() {
 
-		// Check to see if the user is privileged
+		// Check to see if the user is privileged.
 		$is_priviledged = $this->is_privileged_user();
 
 		// Check to see if the user currently has the is_hm_admin cap.
