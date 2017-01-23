@@ -2,7 +2,7 @@
 /**
  * Plugin Name: is_hm_admin
  * Description: Adds a custom capability and some helper functions to determine if the current user is a privileged Human Made or Standard Chartered user.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      Human Made
  * Author URI:  http://hmn.md
  * License:     GPLv2
@@ -160,6 +160,7 @@ class Is_HM_Admin {
 	/**
 	 * Returns an array of WP_User objects for users with Human Made domains in their email addresses.
 	 *
+	 * @since  1.1.0
 	 * @return object Array of Human Made user objects.
 	 */
 	private function get_hm_users() {
@@ -173,6 +174,7 @@ class Is_HM_Admin {
 	/**
 	 * Return an array of Human Made usernames to add to the privileged users list.
 	 *
+	 * @since  1.1.0
 	 * @return array Array of Human Made usernames.
 	 */
 	public function hm_usernames() {
