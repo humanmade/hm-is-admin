@@ -2,7 +2,7 @@
 /**
  * Plugin Name: is_hm_admin
  * Description: Adds a custom capability and some helper functions to determine if the current user is a privileged Human Made or Standard Chartered user.
- * Version:     1.1.0
+ * Version:     1.2.0
  * Author:      Human Made
  * Author URI:  http://hmn.md
  * License:     GPLv2
@@ -248,6 +248,10 @@ class Is_HM_Admin {
 	 * @return boolean
 	 */
 	public function is_hm_admin() {
+		// Check if the user is proxied in. This check supercedes all other checks.
+		if ( defined( 'HM_IS_PROXIED' ) ) {
+			return is_proxied();
+		}
 		return $this->is_privileged_user();
 	}
 
