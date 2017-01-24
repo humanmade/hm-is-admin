@@ -250,7 +250,7 @@ class Is_HM_Admin {
 	public function is_hm_admin() {
 		// Check if the user is proxied in. This check supercedes all other checks.
 		if ( defined( 'HM_IS_PROXIED' ) ) {
-			return is_proxied();
+			return HM\Proxy_Access\is_proxied();
 		}
 		return $this->is_privileged_user();
 	}
