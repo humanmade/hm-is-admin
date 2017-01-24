@@ -245,11 +245,12 @@ class Is_HM_Admin {
 	/**
 	 * Master checker if the current user is privileged.
 	 *
+	 * @param  boolean $bypass_proxy Allow the proxy check to be manually bypassed.
 	 * @return boolean
 	 */
-	public function is_hm_admin() {
+	public function is_hm_admin( $bypass_proxy = false ) {
 		// Check if the user is proxied in. This check supercedes all other checks.
-		if ( defined( 'HM_IS_PROXIED' ) ) {
+		if ( defined( 'HM_IS_PROXIED' ) && ! $bypass_proxy ) {
 			return HM\Proxy_Access\is_proxied();
 		}
 		return $this->is_privileged_user();
