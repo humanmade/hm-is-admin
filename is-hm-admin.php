@@ -143,12 +143,12 @@ class Is_HM_Admin {
 			$allowed_users = apply_filters( 'hm_is_admin_allowed_usernames', $this->privileged_users );
 
 			// Check to see if the current user is in the allowed users array.
-			if ( is_array( $allowed_users ) && in_array( $current_user->user_login, $allowed_users ) ) {
+			if ( is_array( $allowed_users ) && in_array( $current_user->user_login, $allowed_users, true ) ) {
 				return true;
 			}
 
 			// If for some reason the allowed users get filtered to be a string, might as well check that too.
-			if ( is_string( $allowed_users ) && ( $current_user->user_login == $allowed_users ) ) {
+			if ( is_string( $allowed_users ) && ( $current_user->user_login === $allowed_users ) ) {
 				return true;
 			}
 		}
