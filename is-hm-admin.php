@@ -293,8 +293,8 @@ function hm_is_admin() {
  *
  * @return boolean
  */
-function is_hm_admin() {
-	return hm_is_admin()->is_hm_admin();
+function is_hm_admin( $bypass_proxy = false ) {
+	return hm_is_admin()->is_hm_admin( $bypass_proxy );
 }
 
 // Kick it off.
