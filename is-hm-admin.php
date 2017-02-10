@@ -131,7 +131,7 @@ class Is_HM_Admin {
 			$current_user = wp_get_current_user();
 		}
 
-		// If we don't have a current user, then they can't be a wds_admin.
+		// If we don't have a current user, then they can't be a hm_admin.
 		if ( is_wp_error( $current_user ) ) {
 			return false;
 		}
@@ -289,8 +289,9 @@ function hm_is_admin() {
 }
 
 /**
- * Checks if the current user is wds_admin and has special capabilities.
+ * Checks if the current user is hm_admin and has special capabilities.
  *
+ * @param  boolean $bypass_proxy Whether to bypass the HM proxy check. Defaults to false.
  * @return boolean
  */
 function is_hm_admin( $bypass_proxy = false ) {
