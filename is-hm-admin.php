@@ -91,11 +91,7 @@ class Is_HM_Admin {
 	 * @since  1.0.0
 	 */
 	protected function __construct() {
-		$this->basename        = plugin_basename( __FILE__ );
-
-		// This can be whatever user is the privileged user.
-		$this->privileged_users = $this->hm_usernames();
-
+		$this->basename = plugin_basename( __FILE__ );
 	}
 
 	/**
