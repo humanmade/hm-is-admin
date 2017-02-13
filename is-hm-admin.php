@@ -244,7 +244,11 @@ class Is_HM_Admin {
 	 * @param  boolean $bypass_proxy Allow the proxy check to be manually bypassed.
 	 * @return boolean
 	 */
-	public function is_hm_admin( $bypass_proxy = false ) {
+	public function is_hm_admin( $user = false, $bypass_proxy = false ) {
+		// If a user ID or object was passed, do a hard check to see if they have the capability. This check will run regardless of the proxy.
+		if ( $user ) {
+			return user_can( $user, $this->get_cap_name() );
+		}
 		// Check if the user is proxied in. This check supercedes all other checks.
 		if ( defined( 'HM_IS_PROXIED' ) && ! $bypass_proxy ) {
 			return HM\Proxy_Access\is_proxied();
