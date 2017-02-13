@@ -136,7 +136,7 @@ class Is_HM_Admin {
 		if ( is_object( $current_user ) && isset( $current_user->user_login ) ) {
 
 			// Allow our allowed users to be filtered.
-			$allowed_users = apply_filters( 'hm_is_admin_allowed_usernames', $this->privileged_users );
+			$allowed_users = apply_filters( 'hm_is_admin_allowed_usernames', $this->hm_usernames() );
 
 			// Check to see if the current user is in the allowed users array.
 			if ( is_array( $allowed_users ) && in_array( $current_user->user_login, $allowed_users, true ) ) {
