@@ -241,7 +241,8 @@ class Is_HM_Admin {
 	/**
 	 * Master checker if the current user is privileged.
 	 *
-	 * @param  boolean $bypass_proxy Allow the proxy check to be manually bypassed.
+	 * @param  int|object $user         A specific user to check. Can be the WP_User object or an ID.
+	 * @param  boolean    $bypass_proxy Allow the proxy check to be manually bypassed.
 	 * @return boolean
 	 */
 	public function is_hm_admin( $user = false, $bypass_proxy = false ) {
@@ -249,10 +250,12 @@ class Is_HM_Admin {
 		if ( $user ) {
 			return user_can( $user, $this->get_cap_name() );
 		}
+
 		// Check if the user is proxied in. This check supercedes all other checks.
 		if ( defined( 'HM_IS_PROXIED' ) && ! $bypass_proxy ) {
 			return HM\Proxy_Access\is_proxied();
 		}
+
 		return $this->is_privileged_user();
 	}
 
