@@ -294,11 +294,12 @@ function hm_is_admin() {
 /**
  * Checks if the current user is hm_admin and has special capabilities.
  *
- * @param  boolean $bypass_proxy Whether to bypass the HM proxy check. Defaults to false.
+ * @param  int|object $user         A specific user to check. Can be the WP_User object or an ID.
+ * @param  boolean    $bypass_proxy Whether to bypass the HM proxy check. Defaults to false.
  * @return boolean
  */
-function is_hm_admin( $bypass_proxy = false ) {
-	return hm_is_admin()->is_hm_admin( $bypass_proxy );
+function is_hm_admin( $user = false, $bypass_proxy = false ) {
+	return hm_is_admin()->is_hm_admin( $user, $bypass_proxy );
 }
 
 // Kick it off.
