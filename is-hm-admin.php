@@ -135,18 +135,11 @@ class Is_HM_Admin {
 		// If we have a user_login for the current user object, compare that to our acceptable user array.
 		if ( is_object( $current_user ) && isset( $current_user->user_login ) ) {
 
-			// Allow our allowed users to be filtered.
-			$allowed_users = apply_filters( 'hm_is_admin_allowed_usernames', $this->hm_usernames() );
+			// Allow our allowed domains to be filtered.
+			$domains = apply_filters( 'hm_is_admin_allowed_domains', 'humanmade\.co\.uk|hmn\.md' );
+			$allowed = (bool) preg_match( '/(' . $domains . ')$/', $current_user->user_email );
 
-			// Check to see if the current user is in the allowed users array.
-			if ( is_array( $allowed_users ) && in_array( $current_user->user_login, $allowed_users, true ) ) {
-				return true;
-			}
-
-			// If for some reason the allowed users get filtered to be a string, might as well check that too.
-			if ( is_string( $allowed_users ) && ( $current_user->user_login === $allowed_users ) ) {
-				return true;
-			}
+			return $allowed;
 		}
 
 		// Also allow for filtering globally.
