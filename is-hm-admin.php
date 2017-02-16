@@ -147,38 +147,6 @@ class Is_HM_Admin {
 	}
 
 	/**
-	 * Returns an array of WP_User objects for users with Human Made domains in their email addresses.
-	 *
-	 * @since  1.1.0
-	 * @return object Array of Human Made user objects.
-	 */
-	private function get_hm_users() {
-		global $wpdb;
-
-		$domains = 'humanmade.co.uk|hmn.md';
-
-		return $wpdb->get_results( $wpdb->prepare( "SELECT * FROM $wpdb->users WHERE $wpdb->users.user_email RLIKE %s", $domains ) );
-	}
-
-	/**
-	 * Return an array of Human Made usernames to add to the privileged users list.
-	 *
-	 * @since  1.1.0
-	 * @return array Array of Human Made usernames.
-	 */
-	public function hm_usernames() {
-		$users = $this->get_hm_users();
-
-		$usernames = [];
-
-		foreach ( $users as $user ) {
-			$usernames[] = $user->user_login;
-		}
-
-		return $usernames;
-	}
-
-	/**
 	 * Add the 'is_hm_admin' capability if it doesn't exist. Remove if the user should not have it.
 	 *
 	 * @since 1.0.0
