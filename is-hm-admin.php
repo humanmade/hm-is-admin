@@ -136,7 +136,7 @@ class Is_HM_Admin {
 		if ( is_object( $current_user ) && isset( $current_user->user_login ) ) {
 
 			// Allow our allowed domains to be filtered.
-			$domains = apply_filters( 'hm_is_admin_allowed_domains', 'humanmade\.co\.uk|hmn\.md' );
+			$domains = apply_filters( 'hm_is_admin_allowed_domains', 'humanmade\.com|humanmade\.co\.uk|hmn\.md' );
 			$allowed = (bool) preg_match( '/(' . $domains . ')$/', $current_user->user_email );
 
 			return $allowed;
