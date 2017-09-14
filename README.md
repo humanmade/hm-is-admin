@@ -1,5 +1,5 @@
 # `is_hm_admin` #
-[![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)]  
+![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)  
 **Contributors:**      [jazzsequence](https://github.com/jazzsequence), [bradp](https://github.com/bradp), [rmccue](https://github.com/rmccue), [dan-westall](https://github.com/dan-westall)  
 **Stable tag:**        1.3.0  
 **License:**           GPLv2  
