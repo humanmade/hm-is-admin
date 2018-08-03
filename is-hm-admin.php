@@ -190,7 +190,7 @@ class Is_HM_Admin {
 
 		// Protect against adding the cap to users switched to via User Switching.
 		if ( function_exists( 'current_user_switched' ) ) {
-			if ( current_user_switched() && current_user_can( $this->get_cap_name ) ) {
+			if ( current_user_switched() && current_user_can( $this->get_cap_name() ) ) {
 				$user->remove_cap( $this->get_cap_name() );
 				return;
 			}
