@@ -1,7 +1,7 @@
 # `is_hm_admin` #
 ![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)  
 **Contributors:**      [jazzsequence](https://github.com/jazzsequence), [bradp](https://github.com/bradp), [rmccue](https://github.com/rmccue), [dan-westall](https://github.com/dan-westall)  
-**Stable tag:**        1.3.0  
+**Stable tag:**        1.3.1  
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,9 @@ Here's a quick summary:
 * Get someone to review your code, and assign to them; if no one is around, the project lead () can review.
 
 ## Changelog ##
+
+### 1.3.1 ###
+* Fixed typo in function call for `get_cap_name()` which caused fatals
 
 ### 1.3.0 ###
 * Regex the domains and check if the current user email is in that list of domains. Domains can be filtered with `hm_is_admin_allowed_domains`.
