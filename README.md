@@ -1,5 +1,24 @@
+<table width="100%">
+	<tr>
+		<td align="left" width="70%">
+			<strong>HM Is Admin</strong><br />
+			Adds a custom capability and some helper functions to determine if the current user is a privileged user.
+		</td>
+		<td align="center" width="30%">
+			<img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GitHub license" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			A <strong><a href="https://hmn.md/">Human Made</a></strong> project. Maintained by @jazzsequence.
+		</td>
+		<td align="center" width="30%">
+			<img src="https://hmn.md/content/themes/hmnmd/assets/images/hm-logo.svg" width="100" />
+		</td>
+	</tr>
+</table>
+
 # `is_hm_admin` #
-![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)  
 **Contributors:**      [jazzsequence](https://github.com/jazzsequence), [bradp](https://github.com/bradp), [rmccue](https://github.com/rmccue), [dan-westall](https://github.com/dan-westall)  
 **Stable tag:**        1.4.0  
 **License:**           GPLv2  
@@ -28,6 +47,7 @@ Here's a quick summary:
 ### 1.4.0 ###
 * Added `composer.json` so package can be loaded as a composer library.
 * Fixed version constant in main plugin file and updated plugin description.
+* Updated plugin to more current coding standards.
 
 ### 1.3.1 ###
 * Fixed typo in function call for `get_cap_name()` which caused fatals
