@@ -12,7 +12,7 @@
 
 use HM\Is_Admin;
 
-require_once 'inc\class-is-hm-admin.php';
+require_once __DIR__ . '/inc/class-is-hm-admin.php';
 
 /**
  * Copyright (c) 2016 Human Made
