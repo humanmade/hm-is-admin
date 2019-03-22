@@ -1,9 +1,10 @@
 <?php
 /**
- * Plugin Name: is_hm_admin
- * Description: Adds a custom capability and some helper functions to determine if the current user is a privileged Human Made user.
+ * Main Is_HM_Admin class.
  *
- * @package is_hm_admin
+ * Adds a custom capability and some helper functions to determine if the current user is a privileged Human Made user.
+ *
+ * @package HM\Is_Admin
  */
 
 namespace HM\Is_Admin;
