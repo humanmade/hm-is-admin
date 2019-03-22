@@ -28,7 +28,7 @@ class Is_HM_Admin {
 	 * @var    string
 	 * @since  1.0.0
 	 */
-	const VERSION = '1.4.0';
+	const VERSION = '1.4.2';
 
 	/**
 	 * Plugin basename

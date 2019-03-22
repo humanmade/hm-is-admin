@@ -1,7 +1,7 @@
 {
 	"name": "humanmade/hm-is-admin",
 	"description": "Adds a custom capability and some helper functions to determine if the current user is a privileged user.",
-	"version": "1.4.0",
+	"version": "1.4.2",
 	"type": "wordpress-muplugin",
 	"homepage": "https://github.com/humanmade/hm-is-admin",
 	"license": "GPL-2.0+",

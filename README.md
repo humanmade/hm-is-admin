@@ -60,6 +60,9 @@ Here's a quick summary:
 
 ## Changelog ##
 
+### 1.4.2 ###
+*
+
 ### 1.4.1 ###
 * Added composer install instructions.
 * Fixed path to class file.
