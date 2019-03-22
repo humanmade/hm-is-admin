@@ -1,0 +1,40 @@
+{
+	"name": "humanmade/hm-is-admin",
+	"description": "Adds a custom capability and some helper functions to determine if the current user is a privileged user.",
+	"version": "1.4.0",
+	"type": "wordpress-muplugin",
+	"homepage": "https://github.com/humanmade/hm-is-admin",
+	"license": "GPL-2.0+",
+	"authors": [
+		{
+			"name": "Chris Reynolds",
+			"homepage": "https://github.com/jazzsequence"
+		},
+		{
+			"name": "Brad Parbs",
+			"homepage": "https://github.com/bradp"
+		},
+		{
+			"name": "Ryan McCue",
+			"homepage": "https://github.com/rmccue"
+		},
+		{
+			"name": "Dan Westall",
+			"homepage": "https://github.com/dan-westall"
+		},
+		{
+			"name": "John Ang",
+			"homepage": "https://github.com/Kenshino"
+		},
+		{
+			"name": "Shady Sharaf",
+			"homepage": "https://github.com/shadyvb"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	},
+	"suggest": {
+		"humanmade/hm-proxy-access": "HM Proxy Access"
+	}
+}
