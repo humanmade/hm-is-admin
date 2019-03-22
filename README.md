@@ -25,6 +25,10 @@ Here's a quick summary:
 
 ## Changelog ##
 
+### 1.4.0 ###
+* Added `composer.json` so package can be loaded as a composer library.
+* Fixed version constant in main plugin file and updated plugin description.
+
 ### 1.3.1 ###
 * Fixed typo in function call for `get_cap_name()` which caused fatals
 
