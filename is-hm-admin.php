@@ -2,7 +2,7 @@
 /**
  * Plugin Name: is_hm_admin
  * Description: Adds a custom capability and some helper functions to determine if the current user is a privileged Human Made user.
- * Version:     1.3.0
+ * Version:     1.4.0
  * Author:      Human Made
  * Author URI:  http://hmn.md
  * License:     GPLv2
@@ -45,7 +45,7 @@ class Is_HM_Admin {
 	 * @var    string
 	 * @since  1.0.0
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.4.0';
 
 	/**
 	 * Plugin basename

@@ -1,7 +1,7 @@
 # `is_hm_admin` #
 ![GitHub license](https://img.shields.io/badge/license-GPLv2-blue.svg)  
 **Contributors:**      [jazzsequence](https://github.com/jazzsequence), [bradp](https://github.com/bradp), [rmccue](https://github.com/rmccue), [dan-westall](https://github.com/dan-westall)  
-**Stable tag:**        1.3.1  
+**Stable tag:**        1.4.0  
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
