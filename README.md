@@ -7,7 +7,8 @@
 
 ## Description ##
 
-Adds a custom capability and some helper functions to determine if the current user is a privileged user.  
+Adds a custom capability and some helper functions to determine if the current user is a privileged user.
+  
 By default, privileged users are any users with `@humanmade.com`, `@humanmade.co.uk` or `@hmn.md` in their email address. Privileged domains can be filtered and HM proxy are given the capability by default.
 
 ## Development Process
