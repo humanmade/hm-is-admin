@@ -20,7 +20,7 @@
 
 # `is_hm_admin` #
 **Contributors:**      [jazzsequence](https://github.com/jazzsequence), [bradp](https://github.com/bradp), [rmccue](https://github.com/rmccue), [dan-westall](https://github.com/dan-westall)  
-**Stable tag:**        1.4.1  
+**Stable tag:**        1.4.2  
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,7 +30,7 @@ You can use Composer to load this into your project but you'll need to add a rep
 
 ```json
 "require": {
-	"humanmade/hm-is-admin": "^1.4.1"
+	"humanmade/hm-is-admin": "^1.4.2"
 },
 "repositories": [
 	{
@@ -61,7 +61,7 @@ Here's a quick summary:
 ## Changelog ##
 
 ### 1.4.2 ###
-*
+* bump version in composer file
 
 ### 1.4.1 ###
 * Added composer install instructions.
