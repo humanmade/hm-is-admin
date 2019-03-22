@@ -9,6 +9,8 @@
 
 namespace HM\Is_Admin;
 
+use WP_User;
+
 /**
  * Main initiation class
  *
