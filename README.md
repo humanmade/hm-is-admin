@@ -24,6 +24,22 @@
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
+## Installation ##
+
+You can use Composer to load this into your project but you'll need to add a repository for it:
+
+```json
+"require": {
+	"humanmade/hm-is-admin": "^1.4.0"
+},
+"repositories": [
+	{
+		"type": "vcs",
+		"url": "git@github.com:humanmade/hm-is-admin.git"
+	}
+]
+```
+
 ## Description ##
 
 Adds a custom capability and some helper functions to determine if the current user is a privileged user.
