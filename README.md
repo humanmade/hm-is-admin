@@ -20,7 +20,7 @@
 
 # `is_hm_admin` #
 **Contributors:**      [jazzsequence](https://github.com/jazzsequence), [bradp](https://github.com/bradp), [rmccue](https://github.com/rmccue), [dan-westall](https://github.com/dan-westall)  
-**Stable tag:**        1.4.0  
+**Stable tag:**        1.4.1  
 **License:**           GPLv2  
 **License URI:**       http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,7 +30,7 @@ You can use Composer to load this into your project but you'll need to add a rep
 
 ```json
 "require": {
-	"humanmade/hm-is-admin": "^1.4.0"
+	"humanmade/hm-is-admin": "^1.4.1"
 },
 "repositories": [
 	{
@@ -59,6 +59,11 @@ Here's a quick summary:
 * Get someone to review your code, and assign to them; if no one is around, the project lead () can review.
 
 ## Changelog ##
+
+### 1.4.1 ###
+* Added composer install instructions.
+* Fixed path to class file.
+* Added `use` statement for `WP_User` class.
 
 ### 1.4.0 ###
 * Added `composer.json` so package can be loaded as a composer library.
